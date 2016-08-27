@@ -2,17 +2,17 @@
     <head>
         <title>JavaScript</title>
         <style>
-            #demo {
+            #my_id {
                 color: red;
             }
         </style>
     </head>
     <body>
 
-        <div id="demo"></div>
+        <div id="my_id"></div>
 
         <script>
-            document.getElementById("demo").innerHTML = "Hi, I am JavaScript";
+            document.getElementById("my_id").innerHTML = "Hi, I am JavaScript";
         </script>
 
     </body>
