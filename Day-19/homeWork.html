@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <script>
+
+            // var my_name = '10';
+            // document.write(Number.isInteger(my_name));
+
+            var first_num = prompt('First Number: ');
+            var second_num = prompt('Second Number: ');
+
+            first_num = parseInt(first_num);
+            second_num = parseInt(second_num);
+
+            if (Number.isInteger(first_num) && Number.isInteger(second_num)) {
+
+                document.write('Total number is: ' + (first_num + second_num));
+            } else {
+                document.write('Please input a valid number.');
+
+            }
+
+            var myobj = {
+                name: 'mr x',
+                roll: 10
+            };
+
+            //document.write('Total: ' + (first_num + second_num));
+
+        </script>
+
+    </body>
+</html>
+
