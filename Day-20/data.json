@@ -1,0 +1,8 @@
+{
+    "Name": "Mr Abul",
+    "Age": 34,
+    "Money": {
+        "Bank": 10000,
+        "Cash": 167
+    }
+}

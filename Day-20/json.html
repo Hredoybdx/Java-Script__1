@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+    </head>
+    <body>
+
+        <p id="demo"></p>
+
+        <script>
+            var Data = ' {"Name": "Mr Rahim", "Age": 18} ';
+
+            var JSONData = JSON.parse(Data);
+
+            if (JSONData.Age === 18) {
+                //document.write(typeof JSONData.Age);
+            } else {
+                //document.write('NO Entry!');
+            }
+
+
+            //document.write(typeof JSONData.Age);
+
+            var myObj = {
+                Name: 'Mr Abul',
+                Age: 34,
+                Money: {Bank: 10000, Cash: 167}
+            };
+
+            var pureJSON = JSON.stringify(myObj);
+            document.write(pureJSON);
+
+
+            function addMe(num1, num2) {
+                return num1 + num2;
+            }
+            document.write(addMe(10, 12));
+
+
+
+            var selectLarger = function (num1, num2) {
+                if (num1 > num2) {
+                    return num1;
+                } else {
+                    return num2;
+                }
+
+            };
+
+            document.write(selectLarger); // selectLarger(10, 18)
+
+        </script>
+
+    </body>
+</html>
