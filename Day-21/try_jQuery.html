@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Try jQuery</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+            .redColor { color: red; }
+            .blackColor { color: black; }
+            p { display: none; }
+        </style>
+        <script>
+            jQuery(document).ready(
+                    function () {
+
+                        $('#myDiv h1').click(function () {
+                            //jQuery('h1').css('color', 'red');
+                            $(this).addClass('redColor');
+                            // $('body > h1').addClass('blackColor');
+                            $('p').show();
+                        });
+
+                        $('body > h1').click(function () {
+                            //jQuery('h1').css('color', 'red');
+                            $('#myDiv h1').addClass('blackColor');
+                            $(this).addClass('redColor');
+                            $('p').hide();
+                        });
+                    });
+        </script>
+    </head>
+    <body>
+        <div id="myDiv">
+            <h1>Show Image</h1>
+        </div>
+        <h1>Hide Image</h1>
+        <p> <img src="jquery.png" alt="jQuery Logo" style="width: 100px;"> </p>
+    </body>
+</html>
